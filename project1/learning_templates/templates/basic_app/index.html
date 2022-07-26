@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  {% extends "basic_app/basic.html" %}
+    {% block body_block %}
+    {% load custom_filter %}
+      <h1>welcome everybody</h1>
+      <p>we learn about filters here</p>
+      <br>
+      <h2>{{name|upper}}</h2>
+      <h2>{{name|title}}</h2>
+      <h2>{{name|lucky:100}}</h2>
+      <h2>{{number|add:"150"}}</h2>
+      <br>
+      <p> the use of template tag to find lucky no </p>
+      <br>
+      <p>also we see all basic.html is inherited using the templayte tags and all this content will go in the div tag in basic.html</p>
+      {% endblock %}
