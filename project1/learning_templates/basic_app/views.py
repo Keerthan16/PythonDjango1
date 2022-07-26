@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    cont_dict={'name':"keerthan rai",'number':101}
+    cont_dict={'name':"keerthan rai",'number':102}
     return render(request,'basic_app/index.html',cont_dict)
 
 def other(request):
